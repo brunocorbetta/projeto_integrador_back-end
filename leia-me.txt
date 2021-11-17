@@ -1,0 +1,28 @@
+Para fazer funcionar na sua maquina
+
+primeiro verifique se o python esta instalado na sua maquina.
+
+
+1. ativar a venv, abra o terminal e digite:
+venv/Scripts/Activate.ps1 se for powerShell
+venv/Scripts/Activate.bat ser for o terminal normal
+
+Se a venv não ativar veja esse video que explica como desbloquear o  terminal para a venv
+https://www.youtube.com/watch?v=m1TYpvIYm74
+
+2. para instalar todas as dependencias na venv
+pip install -r requirements.txt
+
+3. comando para criar o banco de dados do projeto na sua maquina
+python manage.py makemigrations
+ e depois
+python manage.py migrate
+
+4. crie um usuario
+python manage.py createsuperuser
+
+agora suba o servidor
+manage.py runserver
+
+
+
